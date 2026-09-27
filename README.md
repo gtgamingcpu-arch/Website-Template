@@ -2,5 +2,6 @@
 Official website from PipVR
 Website here: https://furbackorg.onrender.com
 
-<img width="551" height="560" alt="Screenshot 2026-09-03 121050" src="https://github.com/user-attachments/assets/d075f0bf-75f0-4fc4-9b3e-9f710e76578a" />
-
+<br>
+If it looks like this at first, don't worry since i built it on render it has to load it
+<img width="641" height="909" alt="image" src="https://github.com/user-attachments/assets/4c3cfaeb-cd5a-4c0a-abda-f05f10ba7a9f" />
