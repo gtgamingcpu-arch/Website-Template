@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Furback Org</title>
+<title>Website Template</title>
 
 <style>
 * {
@@ -101,71 +101,6 @@ body {
 
 .nav-login:hover {
     background: #22e0b2;
-}
-
-/* =========================
-   SUBSCRIPTION TOGGLE
-========================= */
-
-.subscription-toggle {
-    display: none;
-
-    align-items: center;
-    gap: 8px;
-
-    padding: 9px 13px;
-
-    border: 1px solid rgba(0, 207, 159, 0.3);
-    border-radius: 8px;
-
-    background: rgba(0, 207, 159, 0.07);
-    color: #00cf9f;
-
-    font-size: 12px;
-    font-weight: 800;
-
-    cursor: pointer;
-
-    transition: 0.2s;
-
-    white-space: nowrap;
-}
-
-.subscription-toggle:hover {
-    background: rgba(0, 207, 159, 0.14);
-    border-color: #00cf9f;
-}
-
-.subscription-toggle:disabled {
-    opacity: 0.6;
-    cursor: wait;
-    transform: none;
-}
-
-.subscription-toggle.paused {
-    color: #ffb347;
-    border-color: rgba(255, 179, 71, 0.35);
-    background: rgba(255, 179, 71, 0.07);
-}
-
-.subscription-toggle.paused:hover {
-    background: rgba(255, 179, 71, 0.14);
-    border-color: #ffb347;
-}
-
-.subscription-dot {
-    font-size: 10px;
-}
-
-.subscription-owed {
-    display: none;
-
-    margin-left: 4px;
-
-    color: #ffb347;
-
-    font-size: 11px;
-    font-weight: 700;
 }
 
 /* =========================
@@ -661,98 +596,6 @@ body {
 }
 
 /* =========================
-   PAUSED PREMIUM STATE
-========================= */
-
-.premium-locked {
-    opacity: 0.55;
-    filter: grayscale(0.25);
-    pointer-events: none;
-}
-
-.paused-message {
-    display: none;
-
-    margin-top: 15px;
-
-    padding: 13px 15px;
-
-    border: 1px solid rgba(255, 179, 71, 0.3);
-    border-radius: 9px;
-
-    background: rgba(255, 179, 71, 0.06);
-
-    color: #ffb347;
-
-    font-size: 13px;
-    font-weight: 700;
-}
-
-/* =========================
-   MOD LOADER
-========================= */
-
-.loader-section {
-    background: #090e0c;
-}
-
-.loader-card {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 40px;
-
-    padding: 45px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(0, 207, 159, 0.07),
-            rgba(0, 0, 0, 0)
-        );
-
-    border: 1px solid #25332e;
-
-    border-radius: 15px;
-}
-
-.loader-info {
-    max-width: 650px;
-}
-
-.loader-info h3 {
-    font-size: 32px;
-
-    margin-bottom: 12px;
-}
-
-.loader-info p {
-    color: #7e8985;
-}
-
-.locked {
-    min-width: 210px;
-
-    padding: 15px 22px;
-
-    text-align: center;
-
-    color: #56615d;
-
-    background: #101512;
-
-    border: 1px solid #29332f;
-
-    border-radius: 9px;
-
-    font-weight: 800;
-
-    cursor: not-allowed;
-}
-
-/* =========================
    UPDATES
 ========================= */
 
@@ -800,10 +643,10 @@ body {
     white-space: nowrap;
 }
 
-/* =========================
+/*
    DISCORD
-========================= */
-
+*/
+    
 .discord {
     text-align: center;
 
@@ -907,12 +750,7 @@ body {
     .locked {
         width: 100%;
     }
-
-    /*
-       DO NOT hide the subscription toggle here.
-       If the logged-in user is eligible, it should
-       still appear on mobile.
-    */
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -985,25 +823,12 @@ body {
 
     <a href="#home">Home</a>
     <a href="#plan">Plan</a>
-    <a href="#loader">Mod Loader</a>
     <a href="#updates">Updates</a>
     <a href="#discord">Discord</a>
 
 </div>
 
 <div class="nav-account-actions">
-
-    <!-- Subscription toggle -->
-    <button
-        id="subscriptionToggle"
-        class="subscription-toggle"
-        type="button"
-        style="display:none;"
-    >
-        <span id="subscriptionDot" class="subscription-dot">●</span>
-        <span id="subscriptionText">Subscription Active</span>
-        <span id="subscriptionOwed" class="subscription-owed"></span>
-    </button>
 
     <a
         href="#dashboard"
@@ -1027,28 +852,16 @@ body {
 
     <div class="status">
         <span class="status-dot"></span>
-        FURBACK ORG ONLINE
+        Welcome to you website!
     </div>
 
     <h1>
-        Mods.<br>
-        <span class="accent">Tools.</span><br>
-        <span class="muted">Utilities.</span>
+        PLACEHOLDER.<br>
+        <span class="accent">PLACEHOLDER.</span><br>
+        <span class="muted">PLACEHOLDER.</span>
     </h1>
 
-    <p class="hero-description">
-        Welcome to Furback Org — a place for Furback mods,
-        tools, utilities, and everything else created by PipVR.
-    </p>
-
     <div class="hero-buttons">
-
-        <a
-            href="#download"
-            class="button button-primary"
-        >
-            Download Free DLL
-        </a>
 
         <a
             href="#dashboard"
@@ -1057,57 +870,6 @@ body {
         >
             Login with Discord
         </a>
-
-    </div>
-
-</div>
-
-
-<!-- Launcher preview -->
-
-<div class="launcher">
-
-    <div class="launcher-top">
-
-        <span class="launcher-title">
-            Furback Launcher
-        </span>
-
-        <span class="launcher-ready">
-            ● Ready
-        </span>
-
-    </div>
-
-    <div class="launcher-body">
-
-        <div class="launcher-label">
-            Game
-        </div>
-
-        <div class="launcher-game">
-
-            <strong>
-                Gorilla Tag
-            </strong>
-
-            <span>
-                Waiting for game...
-            </span>
-
-        </div>
-
-        <div class="launcher-status">
-
-            <span>
-                License
-            </span>
-
-            <strong id="launcherLicense">
-                Free
-            </strong>
-
-        </div>
 
     </div>
 
@@ -1122,18 +884,18 @@ body {
 <section class="stats">
 
 <div class="stat">
-    <h2>FREE/FAST</h2>
-    <p>The free DLL downloads <br>ad-free (unlike TUP)</p>
+    <h2>PLACEHOLDER</h2>
+    <p>Text here</p>
 </div>
 
 <div class="stat">
-    <h2>PAID version</h2>
-    <p>There is a PAID Version too!<br>Pay to unlock more!</p>
+    <h2>Text here</h2>
+    <p>text here</p>
 </div>
 
 <div class="stat">
-    <h2>24/7</h2>
-    <p>Forever Website availability<br>Will get updated still</p>
+    <h2>Text here</h2>
+    <p>Text here</p>
 </div>
 
 </section>
@@ -1156,7 +918,7 @@ body {
 
     <p>
         Start with the free version or upgrade to
-        Furback premium when subscriptions become available.
+        ... premium when subscriptions become available.
     </p>
 
 </div>
@@ -1180,25 +942,17 @@ body {
         </div>
 
         <ul>
-            <li>Free DLL download</li>
-            <li>Basic Furback access</li>
-            <li>Community support</li>
+            <li>R1</li>
+            <li>R2</li>
+            <li>R3</li></li>
         </ul>
-
-        <a
-            href="#download"
-            class="button button-primary"
-            style="width:100%;"
-        >
-            Get Free DLL
-        </a>
 
     </div>
 
 
     <div
         class="plan featured"
-        id="furbackPlusPlan"
+        id="...PlusPlan"
     >
 
         <div class="plan-tag">
@@ -1206,18 +960,15 @@ body {
         </div>
 
         <h3>
-            Furback+
+            ...+
         </h3>
 
         <div class="price">
-            $5 <span>/ Month</span>
+            $_ <span>/ Month</span>
         </div>
 
         <ul>
-            <li>Mod Loader</li>
-            <li>Basic Premium features</li>
-            <li>Advanced dashboard</li>
-            <li>Subscriber downloads</li>
+            <li>Reason/s</li>
         </ul>
 
         <button class="plan-button disabled">
@@ -1245,7 +996,7 @@ body {
         </div>
 
         <ul>
-            <li>Everything in Furback+</li>
+            <li>Everything in ...+</li>
             <li>Full premium features</li>
             <li>More!</li>
         </ul>
@@ -1255,114 +1006,6 @@ body {
         </button>
 
     </div>
-
-</div>
-
-</section>
-
-<!-- =========================
-     MOD LOADER
-========================= -->
-
-<section class="section loader-section" id="loader">
-
-<div class="section-header">
-
-    <div class="section-label">
-        Mod Loader
-    </div>
-
-    <h2>
-        One launcher.<br>
-        All your mods.
-    </h2>
-
-    <p>
-        The Furback Mod Loader is planned as an easy way
-        to manage and launch your Furback mods.
-    </p>
-
-</div>
-
-
-<div
-    class="loader-card"
-    id="premiumLoaderCard"
->
-
-    <div class="loader-info">
-
-        <h3>
-            Furback Mod Loader
-        </h3>
-
-        <p id="loaderDescription">
-            The installer will be available to users with
-            an active FB subscription.
-        </p>
-
-        <div
-            id="loaderPausedMessage"
-            class="paused-message"
-        >
-            ⏸️ Subscription Paused — premium features are currently locked.
-        </div>
-
-    </div>
-
-    <div
-        id="loaderLocked"
-        class="locked"
-    >
-        🔒 Coming Soon
-    </div>
-
-</div>
-
-</section>
-
-<!-- =========================
-     DOWNLOAD
-========================= -->
-
-<section class="section" id="download">
-
-<div class="section-header">
-
-    <h2>
-        Get Furback Menu.
-    </h2>
-
-    <p>
-        The free DLL is available to everyone.
-        Premium downloads will require an active subscription.
-    </p>
-
-</div>
-
-<div class="loader-card">
-
-    <div class="loader-info">
-
-        <h3>
-            Furback Menu Download
-        </h3>
-
-        <p>
-            Download the current free version of the
-            Furback mod menu. A bit broken
-            but at least your not paying for a broken menu
-        </p>
-
-    </div>
-
-    <a
-        href="downloads/FurbackMenuREBORN.dll"
-        download
-        class="button button-primary"
-    >
-        Download Furback Menu
-    </a>
 
 </div>
 
@@ -1385,7 +1028,7 @@ body {
     </h2>
 
     <p>
-        Keep up with the latest Furback Org updates.
+        Keep up with the latest ... updates.
     </p>
 
 </div>
@@ -1398,37 +1041,17 @@ body {
         <div class="update-info">
 
             <h3>
-                Furback Org website launched
+                Title
             </h3>
 
             <p>
-                The new Furback Org website is now online, With some html cleanup :)
+                Update here
             </p>
 
         </div>
 
         <div class="update-date">
             NEW
-        </div>
-
-    </div>
-
-    <div class="update">
-
-        <div class="update-info">
-
-            <h3>
-                More mods coming
-            </h3>
-
-            <p>
-                More Furback projects and utilities are in development.
-            </p>
-
-        </div>
-
-        <div class="update-date">
-            SOON
         </div>
 
     </div>
@@ -1448,12 +1071,12 @@ body {
 </h2>
 
 <p>
-    Join the Furback Discord to get updates,
+    Join the ... Discord to get updates,
     announcements, and information about new releases.
 </p>
 
 <a
-    href="https://discord.gg/tH9we3UCMY"
+    href="https://discord.gg/YOUR_SERVER_HERE"
     target="_blank"
     class="button button-primary"
 >
@@ -1475,7 +1098,7 @@ body {
     </div>
 
     <h2>
-        Your Furback account.
+        Your ... account.
     </h2>
 
     <p id="dashboardDescription">
@@ -1520,42 +1143,17 @@ body {
 <footer class="footer">
 
 <div>
-    © 2026 <strong>FurbackOrg</strong>
+    © 2026 <strong>Your Website</strong>
 </div>
 
 <div>
-    Created by <strong>PipPlaysVr</strong>
+    Created by <strong>Your Name</strong>
 </div>
 
 </footer>
 
-<!-- ========================
-     ACCOUNT + SUBSCRIPTION
-========================= -->
-
-<script>
-
-/*
-    ============================================
-    FURBACK ORG OWNER EASTER EGG
-    ============================================
-
-    This is intentionally NOT a security check.
-
-    Changing this value does NOT give anyone
-    owner permissions.
-
-    Actual owner permissions are determined
-    by the server.
-*/
-
-const owner = "PipPlaysVrOfficial";
-
-if (owner === "PipPlaysVrOfficial") {
-    console.log("Furback Org owner detected 👀");
-}
-
-
+/* THIS STUFF IS DEACTIVATED */
+    
 /*
     ============================================
     ACCOUNT STATE
